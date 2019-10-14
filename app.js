@@ -1,12 +1,12 @@
-const yourDate = new Date("2016-10-30T02:10:26"),
-music = ['ido', 'noinaycoanh', 'nguoiamphu'];
+const yourDate = new Date("2019-08-14T00:00:00"),
+music = ['ido', 'noinaycoanh', 'nguoiamphu', 'lynd'];
 
 document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
 
       document.querySelector("anni").textContent = `${(yourDate.getDate()>9)?yourDate.getDate():"0"+yourDate.getDate()}-${(yourDate.getMonth()>8)?(yourDate.getMonth()+1):"0"+(yourDate.getMonth()+1)}-${yourDate.getFullYear()}`;
       
-      document.querySelector("date").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24)+" DAYS";
+      document.querySelector("date").textContent = (Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24)+1)+" DAYS";
 
       function olock() {
             var today = new Date(),
