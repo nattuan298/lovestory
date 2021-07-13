@@ -2,6 +2,7 @@ html, body {
       background-color: #f6f6f6;
       margin: 0;
       padding: 0;
+      background-image: "img/sign_up.jpg";
 }
 
 img {max-width: 100%;}
